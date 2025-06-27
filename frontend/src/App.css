@@ -1,0 +1,115 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+/* Main App Layout */
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #f3f4f6, #e0e7ff);
+  transition: background 0.3s ease;
+}
+
+/* Logo Styling */
+.App-logo {
+  height: 45vmin;
+  pointer-events: none;
+  transition: transform 0.8s ease-in-out, opacity 0.4s ease;
+  opacity: 0.9;
+}
+
+/* Logo Hover Effect */
+.App-logo:hover {
+  transform: rotate(360deg);
+  opacity: 1;
+}
+
+/* Header Styling */
+.App-header {
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+  color: white;
+  padding: 40px 0;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.App-header:hover {
+  background: linear-gradient(135deg, #9333ea, #4f46e5);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Title */
+.App-header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Link Styling */
+.App-link {
+  color: #61dafb;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.App-link:hover {
+  color: #10b981;
+  transform: scale(1.05);
+  text-decoration: underline;
+}
+
+/* Keyframe for Logo Spin */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .App-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .App-logo {
+    height: 30vmin;
+  }
+}
+
+@media (max-width: 480px) {
+  .App-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .App-logo {
+    height: 25vmin;
+  }
+
+  .App-link {
+    font-size: 1rem;
+  }
+}

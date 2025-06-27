@@ -1,0 +1,3 @@
+backend/models_cache/
+backend/venv/
+backend/__pycache__/

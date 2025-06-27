@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dark Mode Customization */
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.app {
+  font-family: 'Arial', sans-serif;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  background-color: #ffffff;
+  color: #121212;
+}
+
+/* Global Styles for smooth transitions */
+* {
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;  /* Smooth transition for all elements */
+}
+
+h1, h2 {
+  margin: 0;
+  font-weight: 700;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #ff6347; /* Slight red tint on hover for better interaction */
+}
+
+/* Skeleton Loading Animation */
+.skeleton-loader {
+  display: block;
+  width: 100%;
+  background: #f0f0f0;
+  animation: skeleton-animation 1.5s infinite linear;
+  border-radius: 8px;
+}
+
+@keyframes skeleton-animation {
+  0% {
+    background: #f0f0f0;
+  }
+  50% {
+    background: #e0e0e0;
+  }
+  100% {
+    background: #f0f0f0;
+  }
+}
+
+/* Card Hover Effect */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Button Styles */
+button {
+  border-radius: 0.375rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #4c51bf;
+  transform: translateY(-2px);
+}
+
+/* Input Fields */
+input, select {
+  transition: border-color 0.3s ease;
+  border-radius: 0.375rem;
+}
+
+input:focus, select:focus {
+  border-color: #4c51bf;
+  outline: none;
+}
+
+/* Responsive Layout for Mobile */
+@media (max-width: 640px) {
+  .news-container {
+    padding: 1rem;
+  }
+
+  .news-container .card {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Additional Layout Styling */
+.container {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* News Card Style */
+.news-card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.news-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.news-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Additional Dark Mode Styling */
+body.dark .news-card {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+body.dark .card:hover {
+  background-color: #333;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+body.dark input, body.dark select {
+  background-color: #333;
+  color: #ffffff;
+  border-color: #444;
+}
+
+body.dark input:focus, body.dark select:focus {
+  border-color: #ff6347;
+}
