@@ -15,26 +15,26 @@ Translation support (English, Hindi, Marathi)
 Fullstack app with FastAPI (backend) + React.js (frontend)
 
 ## 📂 Project Structure
-
+```
 AI-news-summarizer/
 │
-├── backend/              # FastAPI backend
-│   ├── main.py           # Main backend API
-│   ├── requirements.txt  # Python dependencies
-│   ├── .env              # Environment variables (API keys)
-│   └── venv/             # Virtual environment (ignored in git)
+├── backend/ # FastAPI backend
+│ ├── main.py # Main backend API
+│ ├── requirements.txt # Python dependencies
+│ ├── .env # Environment variables (API keys)
+│ └── venv/ # Virtual environment (ignored in git)
 │
-├── frontend/             # React frontend
-│   ├── src/              # React source code
-│   │   ├── components/   # UI components
-│   │   ├── pages/        # App pages
-│   │   ├── services/     # API service calls
-│   │   └── App.js        # Main React file
-│   ├── package.json      # Node.js dependencies
-│   └── public/           # Static files
+├── frontend/ # React frontend
+│ ├── src/ # React source code
+│ │ ├── components/ # UI components
+│ │ ├── pages/ # App pages
+│ │ ├── services/ # API service calls
+│ │ └── App.js # Main React file
+│ ├── package.json # Node.js dependencies
+│ └── public/ # Static files
 │
-└── README.md             # Project documentation
-
+└── README.md # Project documentation
+```
 
 ⚙️ Installation & Setup
 1️⃣ Clone the Repository
