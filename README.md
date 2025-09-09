@@ -1,18 +1,23 @@
-📰 AI News Summarizer
+<h1 align="center">📰 AI News Summarizer</h1>
 
-An AI-powered web application that fetches top news, summarizes articles using NLP models, analyzes sentiment, and optionally translates summaries into different languages.
+<p align="center">
+  An <b>AI-powered web application</b> that fetches top news, summarizes articles using NLP models, 
+  analyzes sentiment, and optionally translates summaries into different languages.
+</p>
 
-🚀 Features
+<hr>
 
-Fetches real-time news from NewsAPI
+<h2>🚀 Features</h2>
 
-Summarizes news using Pegasus & T5 NLP models
+<ul>
+  <li>🗞️ Fetches real-time news from <b>NewsAPI</b></li>
+  <li>📝 Summarizes news using <b>Pegasus & T5 NLP models</b></li>
+  <li>📊 Sentiment analysis (<b>Positive / Negative / Neutral</b>)</li>
+  <li>🌐 Translation support (<b>English, Hindi, Marathi</b>)</li>
+  <li>⚡ Fullstack app with <b>FastAPI (backend)</b> + <b>React.js (frontend)</b></li>
+</ul>
 
-Sentiment analysis (Positive / Negative / Neutral)
-
-Translation support (English, Hindi, Marathi)
-
-Fullstack app with FastAPI (backend) + React.js (frontend)
+<hr>
 
 ## 📂 Project Structure
 ```
@@ -139,6 +144,3 @@ If frontend shows Axios error → run inside frontend/:
 npm install axios
 ```
 
-✨ You’re all set! Happy coding 🚀
-
-Do you want me to also add screenshots/demo section (like UI preview + API response examples) to make your README look even more polished for GitHub?
